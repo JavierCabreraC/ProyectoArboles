@@ -1,0 +1,10 @@
+abrir:perforar,taladrar,agrietar
+boleta:comprobante,papeleta,entrada
+caratula:protada,tapa,careta
+casa:vivienda,morada,hogar
+definir:explicar,precisar,fijar
+enojar:molestar,irritar,enfurecer
+fin:termino,final,conclusion
+gastar:consumir,agotar
+haber:tener,poseer
+habitar:morar,ocupar
