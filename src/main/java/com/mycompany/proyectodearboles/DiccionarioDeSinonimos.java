@@ -8,8 +8,6 @@ package com.mycompany.proyectodearboles;
 import Excepciones.OrdenInvalidoException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -235,7 +233,7 @@ public class DiccionarioDeSinonimos extends javax.swing.JFrame {
     private void jCambiarArbolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCambiarArbolActionPerformed
         try {
             this.inicializarArbol();
-        } catch (OrdenInvalidoException ex) {
+        } catch (OrdenInvalidoException ex) {                        // <-- cambiar
          JOptionPane.showMessageDialog(null,"orden invalido intente otra vez");  
         }
        // TODO add your handling code here:
@@ -397,13 +395,13 @@ public class DiccionarioDeSinonimos extends javax.swing.JFrame {
     }
     
     private void cargar(){
-     List<String> palabras= new ArrayList<>();
-     List<String> significado =new ArrayList<>();
-     Archivo file= new Archivo("hola.txt");
-     file.cargarDesdeUnArchivo(palabras,significado);
-     for(int i=0;i<palabras.size();i++){
-      ia.insertar(palabras.get(i),significado.get(i));
-     }
+        List<String> palabras= new ArrayList<>();
+        List<String> significado =new ArrayList<>();
+        Archivo file= new Archivo("hola.txt");
+        file.cargarDesdeUnArchivo(palabras,significado);
+        for(int i=0;i<palabras.size();i++){
+            ia.insertar(palabras.get(i),significado.get(i));
+        }
     }
     
     /**
@@ -439,7 +437,7 @@ public class DiccionarioDeSinonimos extends javax.swing.JFrame {
             public void run() {
                 try {
                     new DiccionarioDeSinonimos().setVisible(true);
-                } catch (OrdenInvalidoException ex) {
+                } catch (OrdenInvalidoException ex) {             // <-- cambiar             
           JOptionPane.showMessageDialog(null,"orden invalido intente otra vez");  
                 }
             }
